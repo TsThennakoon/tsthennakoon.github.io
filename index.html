@@ -30,6 +30,10 @@
     
     <!--====== Style CSS ======-->
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+	
+	<script>(function(w, d) { w.CollectId = "5f68714e21588d66bd7478ab"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.async=true; s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script>
     
 </head>
 
@@ -868,13 +872,13 @@
                     <div class="contact-wrapper form-style-two pt-115">
                         <h4 class="contact-title pb-10"><i class="lni lni-envelope"></i> Leave <span>A Message.</span></h4>
 
-                        <form id="contact-form" action="http://formspree.io/mqkgzylb" method="post">
+                        <form id="contact-form" class="pageclip-form" action="https://send.pageclip.co/uwuCcXufSLNueFbgt7aAnrSQLX8yLAGn/contact-form" method="post">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-input mt-25">
                                         <label>Email</label>
                                         <div class="input-items default">
-                                            <input type="email" name="email" placeholder="Email">
+                                            <input type="email" name="email" placeholder="Email" required>
                                             <i class="lni lni-envelope"></i>
                                         </div>
                                     </div> <!-- form input -->
@@ -883,7 +887,7 @@
                                     <div class="form-input mt-25">
                                         <label>Name</label>
                                         <div class="input-items default">
-                                            <input name="first name" type="text" placeholder="First Name">
+                                            <input name="name" type="text" placeholder="Name">
                                             <i class="lni lni-user"></i>
                                         </div>
                                     </div> <!-- form input -->
@@ -918,7 +922,7 @@
                                 <p class="form-message"></p>
                                 <div class="col-md-12">
                                     <div class="form-input light-rounded-buttons mt-30">
-                                        <button class="main-btn light-rounded-two" type="submit">Send Message</button>
+                                        <button class="main-btn light-rounded-two pageclip-form__submit" type="submit">Send Message</button>
                                     </div> <!-- form input -->
                                 </div>
                             </div> <!-- row -->
@@ -1012,6 +1016,8 @@
     
     <!--====== Main js ======-->
     <script src="assets/js/main.js"></script>
+
+    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
     
 </body>
 
