@@ -7,6 +7,7 @@
 				$name = str_replace(array("\r","\n"),array(" "," "),$name);
         $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
         $message = trim($_POST["massage"]);
+		$subject = trim($_POST["subject"]);
 
         // Check that data was sent to the mailer.
         if ( empty($name) OR empty($subject) OR empty($lname) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -18,7 +19,7 @@
 
         // Set the recipient email address.
         // FIXME: Update this to your desired email address.
-        $recipient = "theekshana8179@gmail.com";
+        $recipient = "3servicesinfo@gmail.com";
 
         // Set the email subject.
         $subject = "New contact from $name";
