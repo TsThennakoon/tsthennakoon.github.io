@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
-Disallow: assets/images
+Sitemap: http://3service.lk
 
