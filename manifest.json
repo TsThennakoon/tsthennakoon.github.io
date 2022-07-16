@@ -1,0 +1,19 @@
+{
+  "background_color": "#ffffff",
+  "description": "Website development/Web apps/Electrical plans and drawings/QS/CCTV/IT solutions",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "greencode",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "greencode",
+  "start_url": "/",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "images/2277x1489.png",
+      "type": "image/png",
+      "sizes": "2277x1489"
+    }
+  ]
+}
