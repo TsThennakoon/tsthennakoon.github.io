@@ -11,9 +11,9 @@
   "theme_color": "#ffffff",
   "icons": [
     {
-      "src": "/images/2277x1489.png",
+      "src": "/images/coffee-icon.png",
       "type": "image/png",
-      "sizes": "2277x1489"
+      "sizes": "512x512"
     }
   ]
 }
