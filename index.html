@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    
+    <link rel="manifest" href="manifest.json">
     <!--====== Title ======-->
 	<title>greencode</title>
     
@@ -34,7 +34,11 @@
     <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
 	
 	<script>(function(w, d) { w.CollectId = "5f6885c921588d66bd74791b"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.async=true; s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script>
-    
+    <script type="module">
+	   import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+	   const el = document.createElement('pwa-update');
+	   document.body.appendChild(el);
+    </script>
 </head>
 
 <body>
