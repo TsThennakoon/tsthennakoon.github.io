@@ -1,0 +1,903 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+    <head>
+        <!-- Meta Tags -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="keywords" content="Hospital Management System">
+		<meta name="description" content="Minipulz offers a cloud-based, user-friendly management software for small clinics and nursing homes to carry out day-to-day 
+		operations with only a few modules. This will encourage our clients to witness the cohesive and seamless conduct of their patients ' medical practices in order 
+		to keep them connected.">
+		<meta name='copyright' content=''>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<!-- Title -->
+        <title>Digital Pulz - Mini Pulz</title>
+		
+		<!-- Favicon -->
+        <link rel="icon" href="img/logo.png">
+		
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- Nice Select CSS -->
+		<link rel="stylesheet" href="css/nice-select.css">
+		<!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+		<!-- icofont CSS -->
+        <link rel="stylesheet" href="css/icofont.css">
+		<!-- Slicknav -->
+		<link rel="stylesheet" href="css/slicknav.min.css">
+		<!-- Owl Carousel CSS -->
+        <link rel="stylesheet" href="css/owl-carousel.css">
+		<!-- Datepicker CSS -->
+		<link rel="stylesheet" href="css/datepicker.css">
+		<!-- Animate CSS -->
+        <link rel="stylesheet" href="css/animate.min.css">
+		<!-- Magnific Popup CSS -->
+        <link rel="stylesheet" href="css/magnific-popup.css">
+		
+		<!-- Medipro CSS -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+
+		<script async>(function(w, d) { w.CollectId = "5f606819e663330fdf5dbaeb"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-160164333-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-160164333-1');
+		</script>
+		<style>
+			
+			@font-face {
+				font-family: "Raleway-Regular";
+				src: url("fonts/Raleway-Regular.ttf");
+			}
+			@font-face {
+				font-family: "Raleway-Bold";
+				src: url("fonts/Raleway-Bold.ttf");
+			}
+			@font-face {
+				font-family: "Raleway-Medium";
+				src: url("fonts/Raleway-Medium.ttf");
+			}
+			@font-face {
+				font-family: "Raleway-Light";
+				src: url("fonts/Raleway-Light.ttf");
+			}
+			@font-face {
+				font-family: "DMSans-Medium";
+				src: url("fonts/DMSans-Medium.ttf");
+			}
+			@font-face {
+				font-family: "DMSans-Regular";
+				src: url("fonts/DMSans-Regular.ttf");
+			}
+			
+			h1{ font-family: Raleway-Bold; text-transform: uppercase; color: #00247D; }
+			h2{ font-family: Raleway-Medium; text-transform: uppercase; color: #8818d2;}
+			h3{ font-family: DMSans-Medium; color: #323133;}
+			h4{ font-family: DMSans-Regular;}
+			p1{ font-family: Raleway-Light;}
+			p2{ font-family: DMSans-Regular; color: #CF142B;}
+			p3{ font-family: Raleway-Light;}
+			h5,h6,h7,li,p,ul,ol,a,textarea,button { font-family: Raleway-Regular;}
+			blockquote { font-family: Raleway-Regular;}
+			pre { font-family: Raleway-Regular;}
+			
+			.img-fluid:hover {
+				-ms-transform: scale(1.5); /* IE 9 */
+				-webkit-transform: scale(1.5); /* Safari 3-8 */
+				transform: scale(1.5); 
+				display:block;
+                z-index:999;
+                position: relative;
+			}
+
+/* start */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+     * {
+     box-sizing: border-box;
+     padding: 0;
+     margin: 0;
+     }
+
+     .container1 {
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     }
+     .card {
+     margin: 50px;
+     background-color: #fff;
+     justify-content: center;
+     border-radius: 50px;
+     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+     overflow: hidden;
+     width: 300px;
+     }
+     .card-header img {
+     width: 100%;
+     height: 200px;
+     object-fit: cover;
+     }
+     .card-body {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: flex-start;
+     padding: 20px;
+     min-height: 25px;
+     }
+
+     .tag {
+     background: #cccccc;
+     border-radius: 50px;
+     font-size: 12px;
+     margin: 0;
+     color: #fff;
+     padding: 2px 10px;
+     text-transform: uppercase;
+     cursor: pointer;
+     }
+     .tag-teal {
+     background-color: #47bcd4;
+     }
+     .tag-purple {
+     background-color: #5e76bf;
+     }
+     .tag-pink {
+     background-color: #cd5b9f;
+     }
+
+     .card-body p {
+     font-size: 13px;
+     margin: 0 0 40px;
+     }
+     .user {
+     display: flex;
+     margin-top: auto;
+     }
+
+     .user img {
+     border-radius: 50%;
+     width: 40px;
+     height: 40px;
+     margin-right: 10px;
+     }
+     .user-info h5 {
+     margin: 0;
+     }
+     .user-info small {
+     color: #545d7a;
+     }
+
+     @media all and (max-width: 500px) {
+     .card-list {
+          /* On small screens, we are no longer using row direction but column */
+          flex-direction: column;
+     }
+     }
+
+
+     .button {
+     background-color: #8818D2; /* Green */
+     border: none;
+     color: white;
+     padding: 20px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
+     margin: 2px 1px;
+     cursor: pointer;
+     }
+     .button4 {border-radius: 12px;}
+
+	 nav{
+          background: transparent;
+          height:80px;
+          width: 100%;
+        }
+
+
+
+
+
+     .credit {
+     position: absolute;
+     bottom: 20px;
+     left: 20px;
+     color: #000;
+     }
+     .options {
+     display: flex;
+     flex-direction: row;
+     align-items: stretch;
+     overflow: hidden;
+     min-width: 600px;
+     max-width: 900px;
+     width: calc(100% - 1000px);
+     height: 400px;
+     }
+     .option {
+     position: relative;
+     overflow: hidden;
+     min-width: 60px;
+     margin: 10px;
+     background: var(--optionBackground, var(--defaultBackground, #e6e9ed));
+     background-size: auto 120%;
+     background-position: center;
+     cursor: pointer;
+     transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+     }
+     .option:nth-child(1) {
+     --defaultBackground: #ed5565;
+     }
+     .option:nth-child(2) {
+     --defaultBackground: #fc6e51;
+     }
+     .option:nth-child(3) {
+     --defaultBackground: #ffce54;
+     }
+     .option:nth-child(4) {
+     --defaultBackground: #2ecc71;
+     }
+     .option:nth-child(5) {
+     --defaultBackground: #5d9cec;
+     }
+     .option.active {
+     flex-grow: 10000;
+     transform: scale(1);
+     max-width: 600px;
+     margin: 0px;
+     border-radius: 40px;
+     background-size: auto 100%;
+     }
+     .option.active .shadow {
+     box-shadow: inset 0 -120px 120px -120px black, inset 0 -120px 120px -100px black;
+     }
+     .option.active .label {
+     bottom: 20px;
+     left: 20px;
+     }
+     .option.active .info > div {
+     left: 0px;
+     opacity: 1;
+     }
+     .option:not(.active) {
+     flex-grow: 1;
+     border-radius: 30px;
+     }
+     .option:not(.active) .shadow {
+     bottom: -40px;
+     box-shadow: inset 0 -120px 0 -120px black, inset 0 -120px 0 -100px black;
+     }
+     .option:not(.active) .label {
+     bottom: 10px;
+     left: 10px;
+     }
+     .option:not(.active) .info > div {
+     left: 20px;
+     opacity: 0;
+     }
+     .shadow {
+     position: absolute;
+     bottom: 0px;
+     left: 0px;
+     right: 0px;
+     height: 120px;
+     transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+     }
+     .label {
+     display: flex;
+     position: absolute;
+     right: 0px;
+     height: 40px;
+     transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+     }
+     .icon {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     min-width: 40px;
+     max-width: 40px;
+     height: 40px;
+     border-radius: 100%;
+     background-color: white;
+     color: var(--defaultBackground);
+     }
+     .info {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     margin-left: 10px;
+     color: white;
+     white-space: pre;
+     }
+     .info > div {
+     position: relative;
+     transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity 0.5s ease-out;
+     }
+     .main {
+     font-weight: bold;
+     font-size: 1.2rem;
+     }
+     .sub {
+     transition-delay: 0.1s;
+     }
+
+
+
+     .groups{margin: 0 auto;width: 1200px;padding: 10px;height: auto;}
+     .groups li{position: relative;list-style: none;background: #fff;border-radius: 5px;
+          box-shadow: 0 3px 4px 0 #0001;overflow: hidden;margin-bottom: 30px;transition: all 0.3s;}
+     .groups li:hover{transform: scale(1.04);box-shadow: 0 4px 14px 0 #0005;}
+     .groups .card1{overflow: hidden;display: block;}
+     .groups .image-session{float: right;overflow: hidden;margin-right: 20px;}
+     .groups .image-session .image{width: 500px;height: 600px;display: block;background-size: cover;
+          background-position: center;}
+     .groups .meta-sission{position: relative;padding: 15px;display: block;height: 220px;}
+     .groups .meta-sission .head{display: flex;margin-bottom: 10px;}
+     .groups .meta-sission .head .catogry{list-style: none;text-decoration: none;font-size: 14px;
+          font-weight: 600;color: #0075ff;}
+     .meta-sission .head .per span,
+     .meta-sission .head .per input{display: block;font-size: 10px;text-align: right;}
+     .meta-sission .head .per input{-webkit-appearance: none;height: 5px;border-radius: 5px;background: #0001;
+          margin-bottom: 4px;overflow: hidden;}
+     .meta-sission .head .per input::-webkit-slider-thumb{-webkit-appearance: none;width: 0;
+          box-shadow: -100px 0 0 100px #0075ff;}
+     .groups .body1 .title{height: 60px;overflow: hidden;font-size: 24px;}
+     .groups .body1 .desc{height: 45px;overflow: hidden;margin-bottom: 10px;font-size: 13px;}
+     .groups .footer .button{position: absolute;bottom: 20px;right: 25px;background: #0075ff;color: #fff;
+          line-height: 2.2;padding: 0 20px;border-radius: 50px;text-decoration: none;
+          box-shadow: 0 1px 6px 0 #0004;transition: all 0.3s;}
+     .groups .footer .button:hover{box-shadow: 0 3px 8px 0 #0005;background: #063a78;right: 15px;}
+     .groups .footer .views{display: block;font-size: 12px;margin-top: 40px;}
+
+     @media screen and (max-width:780px){.groups{    width: 96%;}
+          .groups li:hover{    transform: none;    box-shadow: none;}
+          
+     }
+     @media screen and (max-width:560px){.groups .image-session{    float: none;    margin-right: 0;}
+          .groups .image-session .image{width: 50%;}
+          .mb-0.button{display: block;margin: 0.2em auto;}
+          
+     }
+
+
+
+
+     .grid-container {
+     display: grid;
+     height: 900px;
+     align-content: space-between;
+     grid-template-columns: auto auto auto;
+     gap: 10px;
+     background-color: transparent;
+     padding: 10px;
+     }
+
+     .grid-container > div {
+     background-color: transparent;
+     text-align: center;
+     padding: 60px 0;
+     font-size: 30px;
+     }
+
+
+
+
+     .card3
+     {
+          position: relative;
+          width: 70%;
+          height: 190px;
+          background: #fff;
+          border-radius: 20px;
+          box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+          transition: 0.5s;
+     }
+     .imgbox1{
+          position: absolute;
+          left: 50%;
+          top:-50px;
+          transform: translate(-50px);
+          width: 100px;
+          height: 50px;
+          background: #fff;
+          border-radius: 20px;
+          box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
+     }
+     .imgbox2{
+          position: absolute;
+          left: 70%;
+          top:-50px;
+          transform: translate(-50px);
+          width: 100px;
+          height: 50px;
+          background: #fff;
+          border-radius: 20px;
+          box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
+     }
+
+
+
+
+
+
+     /* Create two equal columns that floats next to each other */
+     .column {
+     float: right;
+     width: 33%;
+     padding: 5%;
+     height: 200px; /* Should be removed. Only for demonstration */
+     }
+
+     /* Clear floats after the columns */
+     .row:after {
+     content: "";
+     display: table;
+     clear: both;
+     }
+
+     #image1{
+     background-image: url(img/gif1.gif);
+     background-position: 50% 50%;
+     background-repeat: no-repeat, repeat;
+     background-size: 30% 70%;
+     padding: 15px;
+     }
+	  #image2{
+     background-image: url(img/gif1.gif);
+     background-position: 50% 70%;
+     background-repeat: no-repeat, repeat;
+     background-size: 50% 40%;
+     padding: 15px;
+     }
+
+
+
+     /* Create two equal columns that floats next to each other */
+     .column1 {
+     float: left;
+     width: 45%;
+     padding: 10px;
+     height: 550px; /* Should be removed. Only for demonstration */
+     }
+
+     /* Clear floats after the columns */
+     .row1:after {
+     content: "";
+     display: table;
+     clear: both;
+     }
+
+     .btn-group button {
+     background-color: #04AA6D; /* Green background */
+     border: 1px solid green; /* Green border */
+     color: white; /* White text */
+     padding: 10px 24px; /* Some padding */
+     cursor: pointer; /* Pointer/hand icon */
+     float: left; /* Float the buttons side by side */
+     }
+
+     /* Clear floats (clearfix hack) */
+     .btn-group:after {
+     content: "";
+     clear: both;
+     display: table;
+     }
+
+     .btn-group button:not(:last-child) {
+     border-right: none; /* Prevent double borders */
+     }
+
+     /* Add a background color on hover */
+     .btn-group button:hover {
+     background-color: #3e8e41;
+     }
+
+     /* new */
+     @media only screen and (min-width: 600px) {
+     /* For tablets: */
+     .col-s-1 {width: 8.33%;}
+     .col-s-2 {width: 16.66%;}
+     .col-s-3 {width: 25%;}
+     .col-s-4 {width: 33.33%;}
+     .col-s-5 {width: 41.66%;}
+     .col-s-6 {width: 50%;}
+     .col-s-7 {width: 58.33%;}
+     .col-s-8 {width: 66.66%;}
+     .col-s-9 {width: 75%;}
+     .col-s-10 {width: 83.33%;}
+     .col-s-11 {width: 91.66%;}
+     .col-s-12 {width: 100%;}
+     }
+     @media only screen and (min-width: 768px) {
+     /* For desktop: */
+     .col-1 {width: 8.33%;}
+     .col-2 {width: 16.66%;}
+     .col-3 {width: 25%;}
+     .col-4 {width: 33.33%;}
+     .col-5 {width: 41.66%;}
+     .col-6 {width: 100%;}
+     .col-7 {width: 58.33%;}
+     .col-8 {width: 66.66%;}
+     .col-9 {width: 100%;}
+     .col-10 {width: 83.33%;}
+     .col-11 {width: 91.66%;}
+     .col-12 {width: 100%;}
+     }
+	 /* end */
+
+
+  .zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+		</style>
+	
+	</head>
+    <body>
+
+		
+	
+		<!-- Header Area -->
+		<header class="header" >
+			<!-- Topbar -->
+			<div class="topbar">
+				<!-- <div class="container"> -->
+					<div class="row col-md-12">
+						<div class="col-md-1 "></div>
+						<div class="col-md-3 desktop">
+							<!-- Contact -->
+							<button class="btn-sm btn-info text-justify-center" style="height: 26px; width: 250px;"><a  href="demo.html" >Request a Demo</a></button>
+							<!-- End Contact -->
+						</div>
+						<div class="col-md-1 "></div>
+						<div class="col-md-6 ">
+							<!-- Top Contact -->
+							<ul class="top-contact ">
+								<li style="position: relative;"><i class="fa fa-phone"></i>(+94) 76 095 6050</li>
+								<li style="position: relative;"><i class="fa fa-envelope"></i><a href="mailto:info@digitalpulz.com">info@digitalpulz.com</a></li>
+							</ul>
+							<!-- End Top Contact -->
+						</div>
+						<div class="col-md-1 "></div>
+					</div>
+				<!-- </div> -->
+			</div>
+			<!-- End Topbar -->
+			<!-- Header Inner -->
+			<div class="header-inner" style="background-color: #D0BAE0;">
+				<div class="container">
+					<div class="inner">
+						<div class="row">
+							<div class="col-lg-3 col-md-2 col-12 " style="height: 50px;">
+								<!-- Start Logo -->
+								<div class="logo" >
+									<a href="index.html"><img src="img/logo1.png" alt="index.html" width="60%" height="20%" class="logoImage"></a>
+								</div>
+								<!-- End Logo -->
+								<!-- Mobile Nav -->
+								<div class="mobile-nav"></div>
+								<!-- End Mobile Nav -->
+							</div>
+							<div class="col-lg-9 col-md-10 col-12 nav-div">
+								<!-- Main Menu -->
+								<div class="main-menu">
+									<nav class="navigation">
+										<ul class="nav menu">
+											<li class="active"><a href="index.html">Home </a></li>
+											<li><a href="offer.html">Services</a></li>
+											<li><a href="package1.html">Packages</a></li>
+											<li><a href="#">Articles and Videos</a></li>
+											<li><a href="contact.html">Contact Us</a></li>
+										</ul>
+									</nav>
+								</div>
+								<!--/ End Main Menu -->
+							</div>
+							
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<!--/ End Header Inner -->
+		</header>
+		<!-- End Header Area -->
+		<hr>
+
+		
+		<center>
+		<div class="slideshow-container ">
+		
+			<div class="">
+		
+				<a href=""><img src="img/slider/img3.png" style="width:69%;" class="image"></a>
+		
+			</div>
+		
+		</div>
+		</center>
+		
+		<section class="error-page section">
+
+			<div class="section-title">
+				<div class="error-inner" style="float: center;">
+              <h4 style="margin-top: -50px">Our Pet-Pulz Mobile App </h4>
+          <img src="img/section-img.png" alt="#"></div>
+          <p style="float: center;">“Pet Pulz” allows pet owners to simply keep vaccination records and information about previous visits to your clinic. This is to help you and your client to avoid the problem of frequently 
+               misplacing and forgetting pets’ clinical record books. This is updated even if they get 
+               online consultations or online post surgery follow ups. </p>
+          
+          </section>
+          <section class="error-page section" style="margin-top: -8%">
+
+			<div class="container">
+				<div class="row">
+                        
+					<div class="col-lg-6">
+						<div class="col-lg-12">
+							<!-- Error Inner -->
+							<div class="error-inner" style="float: left;">
+								<h4 style="text-align: center;" align="left">Home dashboard</h4>
+								<p align="justify">Retrieve Medical records of all your registered pets from one location
+									
+							</div>
+							<!--/ End Error Inner -->
+						</div>
+						<div class="col-lg-12">
+							<img src="img\vcms\home.jpg" class="zoom" alt="">
+						</div>
+					
+					</div>
+
+					<div class="col-lg-6">					
+						
+						<div class="col-lg-12">
+							<!-- Error Inner -->
+							<div class="error-inner" style="float: left;">
+								<h4 style="text-align: center;" align="left">Pet Overview</h4>
+								<p align="justify">See your pet medical history, view and get PDF of Prescriptions & book appointment fast and easily 
+									
+							</div>
+							<!--/ End Error Inner -->
+						</div>
+						<div class="col-lg-12">
+							<img src="img\vcms\mo1.png" class="zoom" alt="">
+						</div>
+
+					</div>
+				</div><br><br>
+
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="col-lg-12">
+							<!-- Error Inner -->
+							<div class="error-inner" style="float: left;">
+								<h4 style="text-align: center;" align="left">Appointments Part</h4>
+								<p align="justify">Easily find sessions, book appointments, pay from the App and keep track of all your appointments from one location.
+							</div>
+							<!--/ End Error Inner -->
+						</div>
+					</div>
+
+					<br>
+
+				</div>
+                    <div class="row">
+                         <div class="col-sm">
+                         <img src="img\vcms\mo.png" class="zoom" alt="">
+                         </div>
+                         <div class="col-sm">
+                         <img src="img\vcms\mo2.png" class="zoom" alt="">
+                         </div>
+                         <div class="col-sm">
+                         <img src="img\vcms\mo3.png" class="zoom" alt="">
+                         </div>
+                    </div>
+			</div>
+		</section>
+         
+		 <br>
+           
+               <!--	</div>-->
+               <!--</section>	-->
+               <section class="section " >
+                    <div style=" background-repeat: no-repeat; background-image: url('img/vcms/mobile.jpg');" class="desktop">
+                         <div class="row col-lg-12 d-flex justify-content-center" style="margin-top:-10%">
+                              <!-- <div class="col-lg-4 col-12 " >
+     
+                              </div>
+                              <div class="col-lg-4 col-12 " >
+     
+                              </div> -->
+                              <div class="col-lg-7 col-xl-7 offset-xl-1" >
+                                   <div class="text-center text-lg-center py-8 py-lg-0 px-4 px-lg-6 px-lg-7">
+                                        
+                                        <h3 class="font-weight-bold" style="margin-top: 50px; font-size: 42px;">PET PULZ App</h3><br>
+                                        <h3 class="font-weight-bold">For pet owners</h3><br>
+                                        
+                                        
+                                        <div class="row">
+                                             <center>
+                                             <div class="col-lg-7"><img class="col-lg-4" height="90px" src="img/vcms/qr.png" width="90px"><p>Scan to download</p></div>
+                                             </center>
+                                             <div class="col-lg-12">
+                                                  <a href="https://play.google.com/store/apps/details?id=com.peopulz_reactnative&hl=en&gl=US" ><img style="width: 240px; height: 70px;" src="img/hms/playstorelogo.png"/></a>
+                                                  <button type="button" class="btn "style="width: 240px; height: 70px;" >More Information</button>
+                                             </div>
+                                             
+                                        </div><br>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+     
+                    <br><br><br>
+                    <div class="mobile">
+                         <div class="row col-lg-12 d-flex justify-content-center" style="margin-top:-10%">
+                    
+                              <div class="col-lg-7 col-xl-7 offset-xl-1">
+                                   <div class="text-center text-lg-left py-8 py-lg-0 px-4 px-lg-6 px-lg-0">
+                                        <h3 class="font-weight-bold" style="margin-top: 50px; font-size: 42px;">PEO PULZ App</h3><br>
+                                        <h3 class="font-weight-bold">Connect with your hospital</h3><br>
+                                        <img src="img/vcms/mobile.jpg">
+                                        <div class="mr-lg-5"><img class="img-fluid mr-lg-3" style="height:150px;width: 150px;"  src="img/vcms/qr.png" width="90px">
+                                             <p>Scan to download</p>
+                                        </div>
+                    
+                                        <div class="mr-lg-4">
+                                             <a href="https://play.google.com/store/apps/details?id=com.peopulz_reactnative&hl=en&gl=US"><img
+                                                       style="width: 240px; height: 70px;" src="img/hms/playstorelogo.png" /></a>
+                                        </div>
+                                        <div class="col-lg-12">
+                                             
+                                             <button type="button" class="btn "style="width: 240px; height: 70px;" >More Information</button>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+     
+                    
+     
+               </section>
+
+		
+			</div>
+	</section>
+		
+		
+		
+			
+
+	    <!-- Footer Area -->
+		<footer id="footer" class="footer ">
+			<!-- Footer Top -->
+			<div class="footer-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-12">
+							<div class="single-footer">
+								<h2><img src="img/logo1.png" alt="index.html" width="20%" height="5%"></h2>
+								<p>Digital Pulz (Pvt) Ltd. © <br>We make healthcare professionals' life easy.</p>
+								<!-- Social -->
+								<ul class="social">
+									<li><a href="https://www.facebook.com/DigitalPulz/" target="_blank"><i class="icofont-facebook"></i></a></li>
+									<li><a href="https://www.linkedin.com/company/digitalpulz/" target="_blank"><i class="icofont-linkedin"></i></a></li>
+									<li><a href="https://www.youtube.com/channel/UC0SZYSjEh2ZwwC6MnyEiTQw" target="_blank"><i class="icofont-youtube"></i></a></li>
+									<li><a href="https://instagram.com/digital_pulz?igshid=1b8futsxvy27b" target="_blank"><i class="icofont-instagram"></i></a></li>
+								</ul>
+								<!-- End Social -->
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-12">
+							<div class="single-footer f-link">
+								<h2>Quick Links</h2>
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-12">
+										<ul>
+											
+											<li><a href="aboutus.html"><i class="fa fa-caret-right" aria-hidden="true"></i>About Us</a></li>
+											<li><a href="contact.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact Us</a></li>
+												
+										</ul>
+									</div>
+								
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Footer Top -->
+			<!-- Copyright -->
+			<div class="copyright" style="background-color: #8818D2;">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-12">
+							<div class="copyright-content">
+								<p>© Digital Pulz (Pvt) Ltd, 2021 All rights reserved. <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-and-conditions.html">Terms & Conditions</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Copyright -->
+		</footer>
+		<!--/ End Footer Area -->
+		
+			<!-- jquery Min JS -->
+			<script src="js/jquery-3.6.0.min.js"></script>
+			<link rel="preload" href="js/jquery-3.6.0.min.js" as="script">
+			<!-- jquery Migrate JS -->
+			<script src="js/jquery-migrate-3.4.0.min.js"></script>
+			<link rel="preload" href="js/jquery-migrate-3.4.0.min.js" as="script">
+			<!-- jquery Ui JS -->
+			<script src="js/jquery-ui.min.js"></script>
+			<link rel="preload" href="js/jquery-ui.min.js" as="script">
+			<!-- Easing JS -->
+			<script src="js/easing.js"></script>
+			<link rel="preload" href="js/easing.js" as="script">
+			<!-- Color JS -->
+			<script src="js/colors.js"></script>
+			<link rel="preload" href="js/colors.js" as="script">
+			<!-- Popper JS -->
+			<script src="js/popper.min.js"></script>
+			<link rel="preload" href="js/popper.min.js" as="script">
+			<!-- Bootstrap Datepicker JS -->
+			<script src="js/bootstrap-datepicker.js"></script>
+			<link rel="preload" href="js/bootstrap-datepicker.js" as="script">
+			<!-- Jquery Nav JS -->
+			<script src="js/jquery.nav.js"></script>
+			<link rel="preload" href="js/jquery.nav.js" as="script">
+			<!-- Slicknav JS -->
+			<script src="js/slicknav.min.js"></script>
+			<link rel="preload" href="js/slicknav.min.js" as="script">
+		
+			<!-- Niceselect JS -->
+			<script src="js/niceselect.js"></script>
+			<link rel="preload" href="js/niceselect.js" as="script">
+			<!-- Tilt Jquery JS -->
+			<script src="js/tilt.jquery.min.js"></script>
+			<link rel="preload" href="js/tilt.jquery.min.js" as="script">
+			<!-- Owl Carousel JS -->
+			<script src="js/owl-carousel.js"></script>
+			<link rel="preload" href="js/owl-carousel.js" as="script">
+			<!-- counterup JS -->
+			<script src="js/jquery.counterup.min.js"></script>
+			<link rel="preload" href="js/jquery.counterup.min.js" as="script">
+			<!-- Steller JS -->
+			<script src="js/steller.js"></script>
+			<link rel="preload" href="js/steller.js" as="script">
+			<!-- Wow JS -->
+			<script src="js/wow.min.js"></script>
+			<link rel="preload" href="js/wow.min.js" as="script">
+			<!-- Magnific Popup JS -->
+			<script src="js/jquery.magnific-popup.min.js"></script>
+			<link rel="preload" href="js/jquery.magnific-popup.min.js" as="script">
+			<!-- Counter Up CDN JS -->
+			<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+			<link rel="preload" href="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js" as="script">
+			<!-- Bootstrap JS -->
+			<script src="js/bootstrap.min.js"></script>
+			<link rel="preload" href="js/bootstrap.min.js" as="script">
+			<!-- Main JS -->
+			<script src="js/main.js"></script>
+			<link rel="preload" href="js/main.js" as="script">
+
+    </body>
+</html>
