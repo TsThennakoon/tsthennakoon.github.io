@@ -796,9 +796,9 @@ table thead tr{
 								<div class="main-menu">
 									<nav class="navigation">
 										<ul class="nav menu">
-											<li class="active"><a href="index.html">Home </a></li>
+											<li><a href="index.html">Home </a></li>
 											<li><a href="offer.html">Services</a></li>
-											<li><a href="package1.html">Packages</a></li>
+											<li class="active"><a href="package1.html">Packages</a></li>
 											<li><a href="#">Articles and Videos</a></li>
 											<li><a href="contact.html">Contact Us</a></li>
 										</ul>
@@ -833,13 +833,13 @@ table thead tr{
 						<div class="card">
 							
 							<div class="tab">
-								<button class="tablinks" onclick="openCity(event, 'Personal')">Personal</button>
+								<button class="tablinks" onclick="openCity(event, 'Personal')" id="initial">Personal</button>
 								<button class="tablinks" onclick="openCity(event, 'Basic')">Basic</button>
 								<button class="tablinks" onclick="openCity(event, 'Plus')">Plus</button>
 								<button class="tablinks" onclick="openCity(event, 'Premium')">Premium</button>
 							  </div>
 							  
-							<div id="Personal" class="tabcontent">
+							<div id="Personal" class=" tabcontent">
 								<center>
 								<h3>Personal</h3>
 								</center>
@@ -1697,5 +1697,8 @@ table thead tr{
 			}
 
 		</script>
+		<script type="text/javascript">
+			document.getElementById("initial").click();
+			</script>
     </body>
 </html>

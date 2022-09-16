@@ -458,10 +458,17 @@
      }
 	  #image2{
      background-image: url(img/gif1.gif);
-     background-position: 50% 70%;
+     background-position: 50% 100%;
      background-repeat: no-repeat, repeat;
      background-size: 50% 40%;
      padding: 15px;
+     }
+	 #image3{
+     background-image: url(img/card_back.jpg);
+     background-position: 50% 10%;
+     background-repeat: no-repeat, repeat;
+     background-size: 600px 1000px;
+     padding: 150px 10px;
      }
 
 
@@ -469,9 +476,9 @@
      /* Create two equal columns that floats next to each other */
      .column1 {
      float: left;
-     width: 45%;
+     width: 42%;
      padding: 10px;
-     height: 550px; /* Should be removed. Only for demonstration */
+     height: 600px; /* Should be removed. Only for demonstration */
      }
 
      /* Clear floats after the columns */
@@ -505,39 +512,10 @@
      .btn-group button:hover {
      background-color: #3e8e41;
      }
+	 
 
-     /* new */
-     @media only screen and (min-width: 600px) {
-     /* For tablets: */
-     .col-s-1 {width: 8.33%;}
-     .col-s-2 {width: 16.66%;}
-     .col-s-3 {width: 25%;}
-     .col-s-4 {width: 33.33%;}
-     .col-s-5 {width: 41.66%;}
-     .col-s-6 {width: 50%;}
-     .col-s-7 {width: 58.33%;}
-     .col-s-8 {width: 66.66%;}
-     .col-s-9 {width: 75%;}
-     .col-s-10 {width: 83.33%;}
-     .col-s-11 {width: 91.66%;}
-     .col-s-12 {width: 100%;}
-     }
-     @media only screen and (min-width: 768px) {
-     /* For desktop: */
-     .col-1 {width: 8.33%;}
-     .col-2 {width: 16.66%;}
-     .col-3 {width: 25%;}
-     .col-4 {width: 33.33%;}
-     .col-5 {width: 41.66%;}
-     .col-6 {width: 100%;}
-     .col-7 {width: 58.33%;}
-     .col-8 {width: 66.66%;}
-     .col-9 {width: 100%;}
-     .col-10 {width: 83.33%;}
-     .col-11 {width: 91.66%;}
-     .col-12 {width: 100%;}
-     }
-	 /* end */
+     
+	 
 	 
 		</style>
 	
@@ -724,12 +702,10 @@
 		
 						<center>
 							<h4>
-								User Friendly
+								Comprehensive
 							</h4>
 							<p>
-								Clear and concise labeling
-								system to
-								improve productivity
+								Covers every aspect of a veterinary clinic operation
 							</p>
 						</center>
 		
@@ -743,12 +719,10 @@
 		
 						<center>
 							<h4>
-								User Friendly
+								Cloud Support
 							</h4>
 							<p>
-								Clear and concise labeling
-								system to
-								improve productivity
+								Clinical records are accessible from any location
 							</p>
 						</center>
 		
@@ -787,34 +761,30 @@
 		
 		</section>
 
-		<section>
+		<section class="desktop">
 		
 			<div class="article-contener">
 				<ul class="groups" style="height: auto;">
 					<li>
 						<div class="row">
+							<div style="padding-left: 20px;">
 							<div class="column1" style="background-color:#fff;width: 550px;">
 								<div class="body1">
 									<div class="accordion" id="accordionExample">
-		
+										
 										<div class="card1" style="width: auto;background-color: #8818D2;">
+											<button id="btn1" class="btn btn-link btn-lg btn-block  "
+											style="background-color:transparent;" type="button"
+											data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+											aria-controls="collapseOne">
 											<div class="card-header" id="headingOne">
-												<h5 class="mb-0">
+												<h5 class="mb-0" style="font-weight:500;color:white">
 													<br>
-		
-													<button id="btn1" class="btn btn-link btn-lg btn-block "
-														style="background-color:transparent;" type="button"
-														data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-														aria-controls="collapseOne">
 														Registration
-													</button>
-		
-		
-		
 													</br>
 												</h5>
 											</div>
-		
+										</button>
 											<div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
 												data-parent="#accordionExample" style="background-color: #D0BAE0;">
 		
@@ -830,116 +800,122 @@
 		
 											</div>
 										</div>
-		
-		
+
+
+
 										<div class="card1" style="width: auto;background-color: #8818D2;">
-											<div class="card-header" id="one">
-												<h5 class="mb-0">
-													<button id="btn2" class="btn btn-link collapsed btn-lg btn-block"
-														style="background-color:transparent;" type="button"
-														data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
-														aria-controls="collapseTwo">
-														Task Scheduling
-													</button>
+											<button id="btn2" class="btn btn-link btn-lg btn-block "
+											style="background-color:transparent;" type="button"
+											data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+											aria-controls="collapseTwo">
+											<div class="card-header" id="two">
+												<h5 class="mb-0" style="font-weight:500;color:white">
+													<br>
+													Task Scheduling
+													</br>
 												</h5>
 											</div>
-											<div id="collapseTwo" class="collapse" aria-labelledby="one"
+										</button>
+											<div id="collapseTwo" class="collapse" aria-labelledby="two"
 												data-parent="#accordionExample" style="background-color: #D0BAE0;">
+		
 												<div class="card-body">
-													Receptionist/doctors can schedule a future appointment using this feature.
-													Different colors can be assigned to different types of appointments such as
-													surgery, vaccination,
-													grooming according to the users’ choice. Scheduled appointments can be added
-													to the queue when the clients arrive at the clinic.
+													Registration process comprehensively captures the details of clients and
+													their pets. This paves the way for searching pets’
+													records or clients’ records from numerous data such as name, mobile number,
+													and National Identity Card (NIC) number.
+													At the end of registration pet’s identity card is generated with a bar code.
+													This card can be used to retrieve/generate pets’ clinical history and
+													vaccination records.
 												</div>
+		
 											</div>
 										</div>
+
 										<div class="card1" style="width: auto;background-color: #8818D2;">
+											<button id="btn3" class="btn btn-link btn-lg btn-block "
+											style="background-color:transparent;" type="button"
+											data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+											aria-controls="collapseThree">
 											<div class="card-header" id="two">
-												<h5 class="mb-0">
-													<button id="btn3" class="btn btn-link collapsed btn-lg btn-block"
-														style="background-color:transparent;" type="button"
-														data-toggle="collapse" data-target="#collapseThree"
-														aria-expanded="false" aria-controls="collapseThree">
-														Case Management
-													</button>
+												<h5 class="mb-0" style="font-weight:500;color:white">
+													<br>
+													Case Management
+													</br>
 												</h5>
 											</div>
+										</button>
 											<div id="collapseThree" class="collapse" aria-labelledby="two"
 												data-parent="#accordionExample" style="background-color: #D0BAE0;">
+		
 												<div class="card-body">
-													Case management captures all essential data required for definitive
-													diagnosis and provide treatments. This easy to use, single page interface
-													covers all fields required for clinical diagnosis.
-													Frequently used phrases can be invoked by typing few characters or add new
-													tags to describe the case.
-													Lab test requests and radiology lab requests can be sent while case is
-													pursuing. Doctors can attach important documents (lab reports) or images
-													using this interface.
+													Registration process comprehensively captures the details of clients and
+													their pets. This paves the way for searching pets’
+													records or clients’ records from numerous data such as name, mobile number,
+													and National Identity Card (NIC) number.
+													At the end of registration pet’s identity card is generated with a bar code.
+													This card can be used to retrieve/generate pets’ clinical history and
+													vaccination records.
 												</div>
+		
 											</div>
 										</div>
-		
+
 										<div class="card1" style="width: auto;background-color: #8818D2;">
+											<button id="btn4" class="btn btn-link btn-lg btn-block "
+											style="background-color:transparent;" type="button"
+											data-toggle="collapse" data-target="#collapseThree1" aria-expanded="false"
+											aria-controls="collapseThree1">
 											<div class="card-header" id="four">
-												<h5 class="mb-0">
-													<button id="btn4" class="btn btn-link collapsed btn-lg btn-block"
-														style="background-color:transparent;" type="button"
-														data-toggle="collapse" data-target="#collapseThree1"
-														aria-expanded="false" aria-controls="collapseThree">
-														PACS/RIS
-													</button>
+												<h5 class="mb-0" style="font-weight:500;color:white">
+													<br>
+													PACS/RIS
+													</br>
 												</h5>
 											</div>
-											<div id="collapseThree1" class="collapse" aria-labelledby="four"
+										</button>
+											<div id="collapseThree1" class="collapse" aria-labelledby="two"
 												data-parent="#accordionExample" style="background-color: #D0BAE0;">
+		
 												<div class="card-body">
-													This module is used to track the progress of a radiology exam from doctor's
-													request to radiologist's report. This module has a dedicated PACS server,
-													a web-based image (DICOM) viewer and a feature-rich stand-alone image
-													(DICOM) viewer. This can receive radiology requests from an internal doctor,
-													or can create a radiology request according to a request from an external
-													doctor. Radiographers can view these requests and start the radiography
-													process. Once the process is over, the DICOM images can be uploaded to the
-													system.
-		
-		
+													Registration process comprehensively captures the details of clients and
+													their pets. This paves the way for searching pets’
+													records or clients’ records from numerous data such as name, mobile number,
+													and National Identity Card (NIC) number.
+													At the end of registration pet’s identity card is generated with a bar code.
+													This card can be used to retrieve/generate pets’ clinical history and
+													vaccination records.
 												</div>
+		
 											</div>
 										</div>
+
+										
+		
+										
 									</div>
 								</div>
 							</div>
-							<div class="column1" style="background-color:#fff; width: 600px;">
-		
-								<div class="ppp">
-									<img id="img" src="img/vcms/1.jpg" alt="display image on button click"
-										class="img-responsive img-thumbnail" />
-		
-								</div>
-		
-								<script>
-
-									let img = document.querySelector('#img');
-									let btn1 = document.querySelector('#btn1');
-									let btn2 = document.querySelector('#btn2');
-									let btn3 = document.querySelector('#btn3');
-									let btn4 = document.querySelector('#btn4');
-									btn1.addEventListener('click', () => {
-										img.src = 'img/vcms/1.jpg';
-									})
-									btn2.addEventListener('click', () => {
-										img.src = 'img/vcms/4.jpg';
-									})
-									btn3.addEventListener('click', () => {
-										img.src = 'img/vcms/3.jpg';
-									})
-									btn4.addEventListener('click', () => {
-										img.src = 'img/vcms/5.png';
-									})
-								</script>
-		
 							</div>
+							
+							
+								<div class="column1" style="background-color:#fff; width: 600px;">
+		
+									<div id="image3" class="desktop">
+										<div class="ppp">
+											<img id="img" src="img/vcms/1.jpg" alt="display image on button click"
+												class="img-responsive img-thumbnail" />
+				
+										</div>
+				
+										
+									</div>
+
+									</div>
+									
+
+							
+							
 		
 						</div>
 		
@@ -956,7 +932,176 @@
 		</section>
 
 
+		<section class="mobile">
 		
+			<div class="article-contener">
+				<ul class="groups" style="height: auto;">
+					<li>
+						<div class="row">
+							<div style="padding-left: 20px;">
+							<div class="column1" style="background-color:#fff;width: 550px;">
+								<div class="body1">
+									<div class="accordion" id="accordionExample">
+										
+										<div class="card1" style="width: auto;background-color: #8818D2;">
+											<button id="btn1" class="btn btn-link btn-lg btn-block  "
+											style="background-color:transparent;" type="button"
+											data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+											aria-controls="collapseOne">
+											<div class="card-header" id="headingOne">
+												<h5 class="mb-0" style="font-weight:500;color:white">
+													<br>
+														Registration
+													</br>
+												</h5>
+											</div>
+										</button>
+											<div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+												data-parent="#accordionExample" style="background-color: #D0BAE0;">
+		
+												<div class="card-body">
+													Registration process comprehensively captures the details of clients and
+													their pets. This paves the way for searching pets’
+													records or clients’ records from numerous data such as name, mobile number,
+													and National Identity Card (NIC) number.
+													At the end of registration pet’s identity card is generated with a bar code.
+													This card can be used to retrieve/generate pets’ clinical history and
+													vaccination records.
+												</div>
+		
+											</div>
+										</div>
+
+
+
+										<div class="card1" style="width: auto;background-color: #8818D2;">
+											<button id="btn2" class="btn btn-link btn-lg btn-block "
+											style="background-color:transparent;" type="button"
+											data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+											aria-controls="collapseTwo">
+											<div class="card-header" id="two">
+												<h5 class="mb-0" style="font-weight:500;color:white">
+													<br>
+													Task Scheduling
+													</br>
+												</h5>
+											</div>
+										</button>
+											<div id="collapseTwo" class="collapse" aria-labelledby="two"
+												data-parent="#accordionExample" style="background-color: #D0BAE0;">
+		
+												<div class="card-body">
+													Registration process comprehensively captures the details of clients and
+													their pets. This paves the way for searching pets’
+													records or clients’ records from numerous data such as name, mobile number,
+													and National Identity Card (NIC) number.
+													At the end of registration pet’s identity card is generated with a bar code.
+													This card can be used to retrieve/generate pets’ clinical history and
+													vaccination records.
+												</div>
+		
+											</div>
+										</div>
+
+										<div class="card1" style="width: auto;background-color: #8818D2;">
+											<button id="btn3" class="btn btn-link btn-lg btn-block "
+											style="background-color:transparent;" type="button"
+											data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+											aria-controls="collapseThree">
+											<div class="card-header" id="two">
+												<h5 class="mb-0" style="font-weight:500;color:white">
+													<br>
+													Case Management
+													</br>
+												</h5>
+											</div>
+										</button>
+											<div id="collapseThree" class="collapse" aria-labelledby="two"
+												data-parent="#accordionExample" style="background-color: #D0BAE0;">
+		
+												<div class="card-body">
+													Registration process comprehensively captures the details of clients and
+													their pets. This paves the way for searching pets’
+													records or clients’ records from numerous data such as name, mobile number,
+													and National Identity Card (NIC) number.
+													At the end of registration pet’s identity card is generated with a bar code.
+													This card can be used to retrieve/generate pets’ clinical history and
+													vaccination records.
+												</div>
+		
+											</div>
+										</div>
+
+										<div class="card1" style="width: auto;background-color: #8818D2;">
+											<button id="btn4" class="btn btn-link btn-lg btn-block "
+											style="background-color:transparent;" type="button"
+											data-toggle="collapse" data-target="#collapseThree1" aria-expanded="false"
+											aria-controls="collapseThree1">
+											<div class="card-header" id="four">
+												<h5 class="mb-0" style="font-weight:500;color:white">
+													<br>
+													PACS/RIS
+													</br>
+												</h5>
+											</div>
+										</button>
+											<div id="collapseThree1" class="collapse" aria-labelledby="two"
+												data-parent="#accordionExample" style="background-color: #D0BAE0;">
+		
+												<div class="card-body">
+													Registration process comprehensively captures the details of clients and
+													their pets. This paves the way for searching pets’
+													records or clients’ records from numerous data such as name, mobile number,
+													and National Identity Card (NIC) number.
+													At the end of registration pet’s identity card is generated with a bar code.
+													This card can be used to retrieve/generate pets’ clinical history and
+													vaccination records.
+												</div>
+		
+											</div>
+										</div>
+
+										
+		
+										
+									</div>
+								</div>
+							</div>
+							</div>
+							
+							
+								<div class="column1" style="background-color:#fff; width: 600px;">
+		
+									<div id="image3" class="desktop">
+										<div class="ppp">
+											<img id="img" src="img/vcms/1.jpg" alt="display image on button click"
+												class="img-responsive img-thumbnail" />
+				
+										</div>
+				
+										
+									</div>
+
+									</div>
+									
+
+							
+							
+		
+						</div>
+		
+		
+		
+			</div>
+		
+		
+			</li>
+		
+		
+			</ul>
+			</div>
+		</section>
+
 
 		<div id="image1" class="desktop">
 			<div class="row">
@@ -1241,7 +1386,27 @@
 			<!--/ End Copyright -->
 		</footer>
 		<!--/ End Footer Area -->
-		
+
+			<script>
+			
+				let img = document.querySelector('#img');
+				let btn1 = document.querySelector('#btn1');
+				let btn2 = document.querySelector('#btn2');
+				let btn3 = document.querySelector('#btn3');
+				let btn4 = document.querySelector('#btn4');
+				btn1.addEventListener('click', () => {
+					img.src = 'img/vcms/1.jpg';
+				})
+				btn2.addEventListener('click', () => {
+					img.src = 'img/vcms/4.jpg';
+				})
+				btn3.addEventListener('click', () => {
+					img.src = 'img/vcms/3.jpg';
+				})
+				btn4.addEventListener('click', () => {
+					img.src = 'img/vcms/5.png';
+				})
+			</script>
 			<!-- jquery Min JS -->
 			<script src="js/jquery-3.6.0.min.js"></script>
 			<link rel="preload" href="js/jquery-3.6.0.min.js" as="script">
